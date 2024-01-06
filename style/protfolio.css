@@ -93,6 +93,10 @@ main {
   margin: 0 auto;
 }
 
+main section {
+  margin-top: 120px;
+}
+
 /* about section style */
 .about {
   padding: 130px;
@@ -121,14 +125,27 @@ main {
   font-weight: 700;
   line-height: 30px;
 }
-#what-i-do{
+#what-i-do {
   padding: 30px 150px;
 }
 
-.skills-countenar{
+.skills-countenar {
   display: flex;
-}
-.skills{
-  padding: 30px;
   gap: 24px;
+}
+.skills {
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skills-dac {
+  color: #757575;
+}
+
+.resume-column-titel {
+  color: #474747;
+  font-size: 30px;
+  font-weight: 700;
 }
