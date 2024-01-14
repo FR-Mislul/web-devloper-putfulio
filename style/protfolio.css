@@ -58,9 +58,9 @@ nav a {
 /* header related style */
 .header {
   background-color: #fff8f3;
-  background-image: url(../images/header_bg.png);
+  background-image: url(../images/header_bg.png), url(../images/developer.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right, top left;
 }
 .banner {
   padding: 30px 30px 0px 150px;
@@ -196,4 +196,48 @@ textarea{
   padding: 18px 35px;
   color: #757575;
   border: 0;
+}
+
+/* raspansible webside */
+
+/* mobile viwe respansivle */
+@media screen and (max-width:578px) {
+  .banner .profile-pic{
+    width: 100%;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+    padding: 20x;
+  }
+  .btn-primary{
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  nav, .skills-countenar, .about-info-continer, .resume-continer {
+    display: flex;
+    flex-direction: column;
+  }
+  nav > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #what-i-do {
+    padding: 20px;
+  }
+  .about {
+    padding: 20px;
+  }
+  footer{
+    display: block;
+    padding: 10px 20px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .contract input[type="text"], input[type="email"], textarea{
+    width: 80%;
+  }
 }
